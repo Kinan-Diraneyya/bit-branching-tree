@@ -1,16 +1,16 @@
 /*
-* For convenience, this file contains both the definition for Bit Branching Trees and the code for 
+* For convenience, this file contains both the definition for Bit Branching Trees and the code for
 * benchmarking their performance. The below configurations can be used to change test parameters.
 * This file was tested on MSC and GCC compilers.
 *
 * To benchmark against other structures, add the below to main() under other similar blocks:
 * auto structureTotalTime = measure( // Update the name of structureTotalTime as you see fit
 *	insertionArray, // Leave this as is
-*	[/* Add a reference to the structure here */](int value) { /* Insert the given value into the structure here */ },
-*	[]() { /* Traverse the structure in order here */ },
-*	[]() { /* Do any assertions on the structure here */ },
-*	[/* Add a reference to the structure here */](int value) { /* Search for the given value in the structure here */ },
-*	[/* Add a reference to the structure here */](int value) { /* Erase the given value from the structure here */ }
+*	[/* Add a reference to the structure here *\/](int value) { /* Insert the given value into the structure here *\/ },
+* 	[]() { /* Traverse the structure in order here *\/ },
+* 	[]() { /* Do any assertions on the structure here *\/ },
+* 	[/* Add a reference to the structure here *\/](int value) { /* Search for the given value in the structure here *\/ },
+* 	[/* Add a reference to the structure here *\/](int value) { /* Erase the given value from the structure here *\/ }
 * );
 * You can then print the measured time using something similar to the cout statements at the end of main()
 */
